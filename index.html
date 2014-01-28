@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>srcN Polyfill</title>
+		<script src="external/matchmedia.js"></script>
+		<script src="srcN.js"></script>
+		<style>
+			body { font-family: sans-serif }
+			img {  max-width: 100% }
+		</style>
+	</head>
+	<body>
+		
+		<h1>srcN: A &lt;img&gt; element polyfill</h1>
+				
+		<p>For more info: <a href="http://github.com/scottjehl/picturefill">see project home.</a></p>
+
+		<div class="sizes">
+
+		Example 1 : &lt;img src-1="(max-width: 30em) 100%, (max-width: 50em) 75%, 50%; images/pic-small.png 400w, images/pic-medium.png 800w, images/pic-large.png 1200w"&gt;
+		<br/>
+			<img src-1="(max-width: 30em) 100%, (max-width: 50em) 75%, 50%; images/pic-small.png 400w, images/pic-medium.png 800w, images/pic-large.png 1200w">		
+
+	        
+    	</div>
+		
+		<div class="original">
+		Example 2 : &lt;img src-1="100%; pic1.png 160, pic2.png 320, pic3.png 640,
+                   pic4.png 1280, pic5.png 2560"&gt;<br/>
+			<img src-1="100%; pic1.png 160, pic2.png 320, pic3.png 640,
+                   pic4.png 1280, pic5.png 2560">
+		</div>
+	</body>
+</html>
