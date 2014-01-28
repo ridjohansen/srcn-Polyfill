@@ -2,10 +2,9 @@
 A Responsive Images approach that you can use today that mimics the [proposed srcN syntax](http://tabatkins.github.io/specs/respimg/Overview.html).
 
 
-*  Author: Barry Latimer, Merkle Inc, 2014 
+* Author: XD Techs, Merkle Inc, 2014 
 * License: MIT/GPLv2
 
-**Demo URL:** [http://jansepar.github.com/srcN Polyfill/](http://jansepar.github.com/srcN Polyfill/)
 
 **Draft Specification:** [http://tabatkins.github.io/specs/respimg/Overview.html](http://tabatkins.github.io/specs/respimg/Overview.html)
 

@@ -1,12 +1,11 @@
 {
-    "name": "picturefill",
-    "repo": "scottjehl/picturefill",
+    "name": "srcN Polyfill",
     "description": "A Responsive Images approach that you can use today!",
-    "version": "2.0.0",
-    "main": "picturefill.js",
+    "version": "1.0.0",
+    "main": "srcN.js",
     "scripts": [
-        "picturefill.js",
+        "srcN.js",
         "external/matchmedia.js"
     ],
-    "licence": "MIT/GPLv2"
+    "licence": "MIT"
 }
