@@ -5,6 +5,8 @@ A Responsive Images approach that you can use today that mimics the [proposed sr
 * Author: XD Techs, Merkle Inc, 2014 
 * License: MIT/GPLv2
 
+* Based upon the [picturefill](https://github.com/scottjehl/picturefill) by Scott Jehl
+
 
 **Draft Specification:** [http://tabatkins.github.io/specs/respimg/Overview.html](http://tabatkins.github.io/specs/respimg/Overview.html)
 
@@ -31,32 +33,22 @@ Or with Media Queries
 
 Notes on the markup above...
 
-Please consult the spec for more information on the exact syntax of srcN
+Please consult the spec for more information on the exact syntax of [proposed srcN syntax](http://tabatkins.github.io/specs/respimg/Overview.html).
 
 
 
 
-### HD Media Queries
+### Retina Images
 
-srcN Polyfill natively supports HD(Retina) image replacement.  While numerous other solutions exist, srcN Polyfill has the added benefit of performance for the user in only being served one image.
+srcN Polyfill supports Retina image replacement.  While numerous other solutions exist, srcN Polyfill has the added benefit of performance for the user in only being served one image.
 
 To solve the resolution use-case, the src-N attributes allow multiple urls to be provided, each with an indicator of their resolution (the ratio of image pixels to CSS pixels).
 
-Instead of a single url, simply provide a comma-separated list of urls/resolution pairs, where each pair is a url, followed by whitespace, followed by a CSS <resolution> value. A url provided without a <resolution> is assumed to be at 1x resolution.
+Instead of a single url, simply provide a comma-separated list of urls/resolution pairs, where each pair is a url, followed by whitespace, followed by a CSS resolution value. A url provided without a resolution is assumed to be at 1x resolution.
 
-For example, the following code provides the same image at three different resolutions: one at "normal size", where each image pixel maps to one CSS pixel; one "high-res", which is double the size but meant to be displayed with two image pixels for every one CSS pixel; and one "low-res", which is half the size, intended for low-bandwidth situations.
+For example, the following code provides the same image at two resolutions: one at "normal size", where each image pixel maps to one CSS pixel; one "high-res", which is double the size but meant to be displayed with two image pixels for every one CSS pixel.
 ```html
   <img src-1="pic.png, picHigh.png 2x, picLow.png .5x">
   ```
 
-
-
-### Deferred loading
-
-If srcN Polyfill is deferred until after load is fired, images will not load unless the browser window is resized.
-srcN Polyfill is intentionally exposed to the global space, in the unusual situation where you might want to defer loading of srcN Polyfill you can explicitly call window.srcN().
-
-## Support
-
-srcN Polyfill supports a broad range of browsers and devices (there are currently no known unsupported browsers), provided that you stick with the markup conventions provided.
 
